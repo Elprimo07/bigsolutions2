@@ -4,97 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Solutions - Innovación en TI y Telecomunicaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Navbar Sticky -->
+    <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="Big Solutions">
-                <h1></h1>
+                <img src="logo-big-solutions.png" alt="Logo Big Solutions">
+                <h1>Big Solutions</h1>
             </div>
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#starlink">Starlink</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="cta-button">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section con animación -->
     <section id="inicio" class="hero">
         <div class="container">
-            <h2>Innovación en TI y Telecomunicaciones</h2>
-            <p>En Big Solutions, conectamos tu negocio con el futuro.</p>
-            <a href="#contacto" class="cta-button">Contáctanos</a>
-        </div>
-    </section>
-
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Inteligencia Artificial</h3>
-                    <p>Modelos de IA para análisis predictivo, chatbots y automatización.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Starlink</h3>
-                    <p>Conexión satelital de alta velocidad para zonas remotas.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Hardware</h3>
-                    <p>Venta de equipos de última generación para tu infraestructura.</p>
-                </div>
-                <div class="service-item">
-                    <h3>RPA y Automatización</h3>
-                    <p>Automatización de procesos para mejorar la eficiencia.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Desarrollo de Software</h3>
-                    <p>Soluciones personalizadas para tus necesidades empresariales.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Proyectos Institucionales</h3>
-                    <p>Implementación de tecnología en entornos gubernamentales y educativos.</p>
-                </div>
+            <div class="hero-content">
+                <h2 class="animate-slide">Transformamos tu negocio con <span>tecnología de vanguardia</span></h2>
+                <p class="animate-slide">Soluciones en TI, telecomunicaciones y automatización para empresas en Medellín y Latinoamérica.</p>
+                <a href="#contacto" class="cta-button animate-slide">¡Contáctanos!</a>
+            </div>
+            <div class="hero-image">
+                <img src="tech-illustration.svg" alt="Tecnología" class="animate-float">
             </div>
         </div>
     </section>
 
+    <!-- Sección de Servicios con tarjetas interactivas -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-satellite-dish"></i>
+                    <h3>Starlink</h3>
+                    <p>Conexión satelital de alta velocidad para zonas remotas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>RPA y Automatización</h3>
+                    <p>Automatización de procesos para aumentar tu productividad.</p>
+                </div>
+                <!-- Repite para otros servicios -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Starlink destacada -->
     <section id="starlink" class="starlink">
         <div class="container">
-            <h2>Starlink: Conexión Satelital</h2>
-            <p>Ofrecemos soluciones de internet satelital de alta velocidad con Starlink, ideal para zonas remotas y de difícil acceso. Conectamos tu negocio sin límites.</p>
-            <a href="#contacto" class="cta-button">Más Información</a>
+            <div class="starlink-content">
+                <h2>Internet Satelital <span>Starlink</span></h2>
+                <p>Conectamos tu empresa sin importar la ubicación. Velocidades de hasta 1 Gbps.</p>
+                <a href="#contacto" class="cta-button">Solicitar Demo</a>
+            </div>
         </div>
     </section>
 
-    <section id="nosotros" class="about">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>En <strong>Big Solutions</strong>, ubicados en Medellín, Colombia, nos especializamos en brindar soluciones tecnológicas innovadoras en TI, telecomunicaciones y automatización. Nuestro equipo de expertos está comprometido con la excelencia y la satisfacción del cliente.</p>
-        </div>
-    </section>
-
+    <!-- Formulario de contacto moderno -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Nombre" required>
-                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
-                <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <h2 class="section-title">¿Listo para <span>innovar</span>?</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Big Solutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Medellín, Colombia</p>
+                    <p><i class="fas fa-phone"></i> +57 123 456 7890</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <textarea placeholder="Cuéntanos tu proyecto..." required></textarea>
+                    <button type="submit">Enviar Mensaje <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; Copyright © 2024 Big Solutions. Medellín, Colombia. Todos los derechos reservados.</p>
+            <p>&copy; 2023 Big Solutions. Todos los derechos reservados.</p>
         </div>
     </footer>
 
